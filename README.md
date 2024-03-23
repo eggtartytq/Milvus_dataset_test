@@ -9,8 +9,7 @@
 2. 将description本体也存进去
 3. 找资料  
 
-
-##想法
+##想法：
 1. 了解所需数据的目的
 2. 对比向量数据库和其他数据库的优劣
 3. https://cloud.tencent.com/developer/article/2312534  
