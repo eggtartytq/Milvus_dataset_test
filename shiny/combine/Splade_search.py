@@ -19,6 +19,7 @@ class Splade_search:
             "metric_type" : "IP",
             "params" : {"drop_ratio_search": 0.2}  ,
         }
+        self.connections = connections.connect(host="localhost", port="19530", db_name='default')
         self.collection = Collection('Milvus_Test_splade')
 
     def embed_search(self, input_text, attributes):

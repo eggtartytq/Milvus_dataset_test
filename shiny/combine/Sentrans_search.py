@@ -1,5 +1,5 @@
 from pymilvus import connections, utility, MilvusException, FieldSchema, CollectionSchema, DataType, Collection, loading_progress
-connections.connect(host="localhost", port="19530", db_name='default')
+# connections.connect(host="localhost", port="19530", db_name='default')
 from pymilvus import model
 import pandas as pd
 import numpy as np
@@ -17,6 +17,7 @@ class Sentrans_search:
             "metric_type" : "L2",
             "params" : {"nprobe":10}  ,
         }
+        self.connections = connections.connect(host="localhost", port="19530", db_name='default')
         self.collection = Collection('Milvus_Test_Sentrans')
 
     

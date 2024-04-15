@@ -1,5 +1,5 @@
 from pymilvus import connections, utility, MilvusException, FieldSchema, CollectionSchema, DataType, Collection, loading_progress, AnnSearchRequest, RRFRanker
-connections.connect(host="localhost", port="19530", db_name='default')
+# connections.connect(host="localhost", port="19530", db_name='default')
 from pymilvus.model.hybrid import BGEM3EmbeddingFunction
 import pandas as pd
 import numpy as np
@@ -24,6 +24,7 @@ class BGE_search:
             "metric_type" : "IP",
             "params" : {"drop_ratio_build": 0.2},
         }
+        self.connections = connections.connect(host="localhost", port="19530", db_name='default')
         self.collection = Collection('Milvus_Test_BGE')
 
     
