@@ -93,7 +93,6 @@ def server(input, output, session):
                             #     ui.img(src="https://www.google.com/imgres?q=milvus&imgurl=https%3A%2F%2Fmilvus.io%2Fstatic%2F0bc2e74d0a1b20bbfb91bdbd03f77e5e%2Fbbbf7%2Farchitecture_diagram.png&imgrefurl=https%3A%2F%2Fmilvus.io%2Fdocs%2Fv2.0.x%2Farchitecture_overview.md&docid=Xq5NScqwxSYdcM&tbnid=y8CUfem7vlYJUM&vet=12ahUKEwjM_8Thw6WFAxWmJzQIHfLLAZoQM3oECEMQAA..i&w=1280&h=903&hcb=2&ved=2ahUKEwjM_8Thw6WFAxWmJzQIHfLLAZoQM3oECEMQAA")
                             # ),
                             ui.div(
-                                ui.h1("Please click Reset everytime after Search"),
                                 ui.h1("About searching"),
                                 ui.p("The program will transform the user's input into a vector for the purpose of performing a similarity search within the database data."),
                                 ui.h2("Quick start"),
