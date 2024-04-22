@@ -160,7 +160,7 @@ def server(input, output, session):
     #search result
     @output
     @render.table
-    # @reactive.Effect
+    @reactive.event(input.btn_search, ignore_none=False)
     def search_result():
         if show_result():
             try:
